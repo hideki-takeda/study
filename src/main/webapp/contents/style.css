@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+
+.contentA,.contentB{
+	width:30%;
+	height:100px;
+}
+
+.main{
+	display: flex;
+}
+
