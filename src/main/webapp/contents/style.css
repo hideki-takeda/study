@@ -1,11 +1,28 @@
 @charset "UTF-8";
 
 
-
-.contentA,.contentB{
-	width:30%;
-	height:100px;
+.header{
+	width: 400px;
+	margin: auto;
+	
 }
+
+
+.contentA,.contentB,.contentC,.contentD{
+	width:25%;
+	height:100px;
+	width: 300px; margin: auto;
+}
+
+
+
+.contentA{
+	width:25%;
+	height:100px;
+	width: 300px; margin: auto;
+}
+
+
 
 .main{
 	display: flex;
