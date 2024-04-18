@@ -11,15 +11,13 @@
 .contentA,.contentB,.contentC,.contentD{
 	width:25%;
 	height:100px;
-	width: 300px; margin: auto;
+	margin: auto;
 }
 
 
 
 .contentA{
-	width:25%;
-	height:100px;
-	width: 300px; margin: auto;
+	margin-left: 100px;
 }
 
 
@@ -28,3 +26,13 @@
 	display: flex;
 }
 
+
+.side {
+			background: rgb(128, 128, 128);
+			position: sticky;
+			top: 100px;
+			background: rgb(242, 242, 242);
+			width: 200px; margin: auto;
+			margin-left: 30px;
+			}
+		
