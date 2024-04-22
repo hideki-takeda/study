@@ -100,9 +100,155 @@ if文やwhile文では評価がtrue / false で処理を決める<br>
 if(!(age == 10)){ ageが10に等しくないなら（10以外なら）<br>
 <br>
 
-
-
-
+swhich文による分岐
+<ul>
+	<li>全ての条件式が「変数＝＝値」や「変数＝＝変数」のように<br>
+		左辺と右辺が一致するかを比較する式になっている
+	<li>比較する値が整数（byte型、short型、int型のいずれか）、文字列（string型）、<br>
+		または文字（char型）であり、小数や真偽値ではない
+		<br>
+	
+	<pre>
+	
+	public class Main{<br>
+		public static void main(String[] args){<br>
+			System.out.println("あなたの運勢を占います");<br>
+			<br>
+			int fortune = new.java.util.Random().nextInt(4) + 1;<br>
+			<br>
+			if(fortune == 1){<br>
+				System.out.println("大吉");<br>
+			}else if(fortune == 2){<br>
+				System.out.println("中吉");<br>
+				<br>
+			}else{	<br>
+			}<br>
+		}<br>
+	})	<br>
+	
+	</pre>
+	
+		<br>
+		<br>
+	<pre>
+	public class Main{<br>
+		public static void main(String[] args){<br>
+			System.out.println("あなたの運勢を占います");<br>
+			<br>
+			int fortune = new.java.util.Random().nextInt(4) + 1;<br>
+			<br>
+			swich(fortune){<br>
+				case 1:<br>
+				System.out.println("大吉");<br>
+				break;<br>
+				<br>
+				case 2:<br>
+				System.out.println("中吉"):<br>
+				break;<br>
+				<br>
+				default:<br>
+				System.out.println("凶");<br>
+				<br>
+			}<br>
+			<br>
+		}<br>
+	})	<br>	
+	</pre>	
+		<br>
+		
+		逆にあえてbreak文を書かないこともある<br>
+		<br>
+	<pre>	
+	public class Main{
+		public static void main(String[] args){
+			System.out.println("あなたの運勢を占います");
+			
+			int fortune = new.java.util.Random().nextInt(4) + 1;
+			
+			swich(fortune){
+				case 1:  // fotuneが1か2なら
+				case 2:
+				System.out.println("大吉");
+				break;
+				
+				case 3:
+				System.out.println("中吉"):
+				break;
+				
+				case 4:
+				case 5:
+				System.out.println("吉"):
+				break;
+			}
+		}
+	})
+	
+	</pre>		
+	
+	while文とdo-while文<br>
+	do-while文にすることで、最低１回はブロックを実行することが出来る
+			
+		<br>
+		
+		
+	<pre>
+		▼while文
+		while(条件式){
+			ブロック
+		}
+		
+		
+		▼do-while文
+		
+		do{
+			ブロック
+		}while(条件式)
+		
+	</pre>	
+		
+		
+	for文
+	
+	
+	<pre>
+	▼10回繰り返すプログラム
+	
+	for(int i = 0; i < 10; i++){
+		
+	}
+	
+	</pre>		
+	
+	
+	・「分岐の中に分岐」や「繰り返しの中に分岐」等の多重構造のことを入れ子やネストとよぶ
+	
+	
+	<pre>
+		
+	▼九九の計算表示
+	
+	public class Main{
+		public static void main(String[] args){
+			
+			for(int x = 1; x < 10; x++){
+				for(int y = 1; y < 10; y++){
+					System.out.println(x * y);
+					System.out.println(" ");
+				}
+			}
+		}
+	}
+	</pre>	
+	
+		繰り返しの中断	
+		
+		<pre>
+		
+		
+		
+		</pre>
+		
+		
 	</p>
 
 
