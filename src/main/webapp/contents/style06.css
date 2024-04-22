@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+.header{
+	width: 400px;
+	margin: auto;
+	
+}
+
+
+.contentA,.contentB,.contentC,.contentD{
+	width:25%;
+	height:100px;
+	margin: auto;
+}
+
+
+
+.contentA{
+	margin-left: 100px;
+}
+
+
+
+.main{
+	display: flex;
+}
+
+
+.side {
+			background: rgb(128, 128, 128);
+			position: sticky;
+			top: 100px;
+			background: rgb(242, 242, 242);
+			width: 200px; margin: auto;
+			margin-left: 30px;
+			}
+		
